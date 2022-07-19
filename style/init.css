@@ -10,43 +10,38 @@
 @font-face {
   font-family: "Cozette"; /* Define the name of the font */
   src: url("../source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
-  font-display: swap; /* Avoid showing invisible text while custom fonts load is to temporarily show a system font.  */
 }
 @font-face {
   font-family: "RealityHyper"; /* Define the name of the font */
   src: url("../source/font/Reality_Hyper_Regular.ttf"); /* Defines the URL(s) where the font should be downloaded from */
-  font-display: swap; /* Avoid showing invisible text while custom fonts load is to temporarily show a system font.  */
 }
 @font-face {
   font-family: "BebasNeue"; /* Define the name of the font */
   src: url("../source/font/BebasNeue-Regular.woff2"); /* Defines the URL(s) where the font should be downloaded from */
-  font-display: swap; /* Avoid showing invisible text while custom fonts load is to temporarily show a system font.  */
 }
 @font-face {
   font-family: "SpacePort"; /* Define the name of the font */
   src: url("../source/font/Spaceport_2006.otf"); /* Defines the URL(s) where the font should be downloaded from */
-  font-display: swap; /* Avoid showing invisible text while custom fonts load is to temporarily show a system font.  */
 }
 @font-face {
   font-family: "Azonix"; /* Define the name of the font */
   src: url("../source/font/Azonix.otf"); /* Defines the URL(s) where the font should be downloaded from */
-  font-display: swap; /* Avoid showing invisible text while custom fonts load is to temporarily show a system font.  */
 }
 @font-face {
   font-family: "RobotoRegular"; /* Define the name of the font */
   src: url("../source/font/Roboto-Regular.ttf"); /* Defines the URL(s) where the font should be downloaded from */
-  font-display: swap; /* Avoid showing invisible text while custom fonts load is to temporarily show a system font.  */
 }
 @font-face {
   font-family: "AllerRegular"; /* Define the name of the font */
   src: url("../source/font/Aller_Rg.ttf"); /* Defines the URL(s) where the font should be downloaded from */
-  font-display: swap; /* Avoid showing invisible text while custom fonts load is to temporarily show a system font.  */
 }
 /* ╭──────────────────────────────────────────────────────────────────────────────╮
    │                                   VARIABLE                                   │
    ╰──────────────────────────────────────────────────────────────────────────────╯ */
 :root { /* Represent an element that is the root of document */
   --text-color: #dadada;
+  --link-color: #eaeaea;
+  --link-color--hover: #d70000;
   --background-color: #000000;
 }
 
@@ -108,9 +103,13 @@ nav .list li a {
   transition: all 0.2s ease;
 }
 
+nav .list li a:hover {
+  color: var(--link-color--hover);
+}
+
 header { /* Set style for header tag */
   min-height: 100vh; /* Allows authors to constrain content height to a certain range. */
-  background-image: url(../source/img/craccken-preview.webp); /* Sets the background image(s) of an element. */
+  background-image: url(../source/img/craccken-preview.svg); /* Sets the background image(s) of an element. */
   background-position: center; /* Specifies the initial position of the background image(s) (after any resizing) within their corresponding background positioning area. */
   background-repeat: no-repeat; /* Specifies how background images are tiled after they have been sized and positioned. <repeat | no-repeat> */
   z-index: 1;

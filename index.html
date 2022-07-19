@@ -20,7 +20,6 @@
     <meta name="theme-color" content="#050505" />
     <!-- Force IE 8/9/10 to use its latest rendering engine -->
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta http-equiv="cache-control" content="public, max-age=31536000, must-revalidate"> <!-- The Cache-Control HTTP header field holds directives (instructions) — in both requests and responses — that control caching in browsers and shared caches (e.g. Proxies, CDNs). -->
     <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Set color for status bar and address bar in meta tag (IOS) -->
@@ -60,39 +59,19 @@
     │                                     CSS                                      │
     ╰──────────────────────────────────────────────────────────────────────────────╯
     -->
-    <link rel="stylesheet" href="style/init.css">
-    <link rel="stylesheet" href="style/nav-bottom.css">
-    <link rel="stylesheet" href="style/swiper.css">
-    <link rel="stylesheet" href="style/glitch-text.css">
-    <link rel="stylesheet" href="style/html/link-style.css">
-    <link rel="stylesheet" href="style/banner-section.css">
+    <link rel="stylesheet" href="style/init.css" />
+    <link rel="stylesheet" href="style/nav-bottom.css" />
+    <link rel="stylesheet" href="style/swiper.css" />
+    <link rel="stylesheet" href="style/glitch-text.css" />
+    <link rel="stylesheet" href="style/html-link_style.css" />
+    <link rel="stylesheet" href="style/div-banner.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   </head>
   <body>
-    <header>
-      <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
-      <nav>
-        <ul class="list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#download">Download</a></li>
-          <li><a href="#about">Blog</a></li>
-        </ul>
-      </nav>
-      <div class="banner">
-        <img alt="craccken-badge" id="banner-logo" src="source/img/craccken-badge.webp" />
-        <!-- LOGO -->
-        <div class="banner-text">
-          <!-- Banner text section-layer -->
-          <h2 class="glitch-style glitch-effect glitch-layers" data-text="Craccken"><span>Craccken</span></h2>
-          <p>Collection of open-source projects that we created</p>
-        </div>
-      </div>
-    </header>
     <!-- This elements contains the MAIN CONTENT of the page -->
     <main>
       <!-- The main element represents the main content of the body of a document or application -->
-
       <header>
         <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
         <nav>
@@ -139,15 +118,33 @@
           <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
+              <!-- Slides -->
               <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
               <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
               <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
               <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
             </div>
+            <!-- If we need pagination
+            <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+            <!-- NOTE: Bagian ini dihapus karena kita tidak Memerlukan Scroll Bar -->
+            <!-- <hr /> -->
           </div>
         </div>
       </div>
       <hr />
+      <footer>
+        <!-- This elements represents a end for its nearest ancestor sectioning content or sectioning root element -->
+        <a href="https://github.com/Craccken/craccken.github.io" target="_blank" rel="noopener noreferrer">Source</a>
+        <p>|</p>
+        <a href="mailto:Craccken@protonmail.com">Mail</a>
+      </footer>
       <div class="menu">
         <div class="icons">
           <!-- <i class="bx bx-home"></i> -->
@@ -163,12 +160,6 @@
         </div>
       </div>
     </main>
-    <footer>
-        <!-- This elements represents a end for its nearest ancestor sectioning content or sectioning root element -->
-        <a href="https://github.com/Craccken/craccken.github.io" target="_blank" rel="noopener noreferrer">Source</a>
-        <p>|</p>
-        <a href="mailto:Craccken@protonmail.com">Mail</a>
-    </footer>
   </body>
   <!-- REQ: JS Swiper On https://swiperjs.com/get-started in CDN -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
