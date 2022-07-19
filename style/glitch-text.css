@@ -5,7 +5,7 @@
    │                                   VARIABLE                                   │
    ╰──────────────────────────────────────────────────────────────────────────────╯ */
 :root {
-  --primary-foreground: #fff;
+  --primary-foreground: #ffffff;
   --glitch-foreground-1: #1bc7fb;
   --glitch-foreground-2: #e0237d;
 }

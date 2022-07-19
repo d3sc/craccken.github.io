@@ -1,0 +1,33 @@
+#banner-logo {
+  /* Set style for banner-logo */
+  filter: drop-shadow(20px 20px 50px #ff0000); /* Processes an element’s rendering before it is displayed in the document, by applying one or more filter effects. */
+  width: 83%; /* Specifies the width of the content area, padding area or border area (depending on 'box-sizing') of certain boxes. */
+}
+.banner {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-text {
+  /* Set style for banner-text */
+  margin-left: 20px; /* Shorthand property to set values for the thickness of the margin area. */
+  text-shadow: 0 0 20px #000;
+  width: 600px;
+}
+.banner-text h2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.4;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0px;
+}
+.banner-text p {
+  margin-bottom: 0px;
+  color: #fff;
+  line-height: 1.8;
+  font-size: 1.1em;
+  opacity: 1;
+}
